@@ -31,7 +31,8 @@ except Exception as e:
     print("Intentando continuar con la actualización...")
 
 # 4. Crear Base de Datos
-db = Chroma.from_documents(docs, embeddings, persist_directory="./chroma_db")
+# db = Chroma.from_documents(docs, embeddings, persist_directory="./chroma_db")
+db = Chroma.from_documents(docs, embeddings, persist_directory="/home/vagrant/db_jardin")
 db.persist()
 
 print(f"¡Éxito! Ahora el bot conoce la información de Melositos a través de {len(docs)} fragmentos.")
