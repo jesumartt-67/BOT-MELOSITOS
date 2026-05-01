@@ -1,0 +1,36 @@
+¿Cuando usar Kubernetes y cuando usar Docker? ¿En que se diferencian?
+**********************************************************************
+
+<Docker> es una plataforma para CREAR y GESTIONAR contenedores, mientras que <Kubernetes> es un sistema de ORQUESTACION que gestiona y escala esos contenedores en un entorno distribuido.
+
+¿Qué es Docker?
+Docker es una plataforma de código abierto que permite empaquetar, distribuir y ejecutar aplicaciones en contenedores. Los contenedores son unidades ligeras que incluyen todo lo necesario para ejecutar una aplicación,
+como el código, las bibliotecas y las configuraciones. Docker facilita la creación de entornos aislados y portátiles, lo que permite que las aplicaciones se ejecuten de manera consistente en diferentes entornos, ya sea
+en la máquina local de un desarrollador, en un centro de datos o en la nube. 
+
+¿Qué es Kubernetes?
+Kubernetes, también conocido como K8s, es una plataforma de orquestación de contenedores que se utiliza para gestionar aplicaciones distribuidas en un clúster de nodos. Fue desarrollado originalmente por Google y ahora
+es mantenido por la Cloud Native Computing Foundation (CNCF). Kubernetes se centra en la administración de múltiples contenedores, proporcionando características avanzadas como el escalado automático, la autorreparación
+y la distribución de carga. 
+
+***Principales diferencias entre Kubernetes y Docker***
+
+<Propósito y Función:>
+Docker: Se utiliza para construir, enviar y ejecutar contenedores. Proporciona las herramientas necesarias para crear entornos aislados para las aplicaciones. 
+Kubernetes: Se centra en la orquestación de contenedores, gestionando y escalando aplicaciones compuestas por múltiples contenedores en un entorno distribuido. 
+
+<Gestión de Contenedores:>
+Docker: Maneja contenedores individuales y proporciona capacidades básicas de orquestación a través de Docker Compose y Docker Swarm. 
+Kubernetes: Gestiona múltiples contenedores a través de clústeres, permitiendo la coordinación y programación de contenedores a gran escala. 
+
+<Escalabilidad y Alta Disponibilidad:>
+Kubernetes: Ofrece características avanzadas de escalabilidad automática y distribución de carga, asegurando que las aplicaciones se mantengan disponibles y equilibradas en el tráfico. 
+Docker: No tiene capacidades integradas de escalabilidad automática y requiere herramientas adicionales para lograr la alta disponibilidad. 
+
+<Interacción:>
+Docker: Se utiliza para crear imágenes de contenedores que luego pueden ser ejecutadas en diferentes entornos. 
+Kubernetes: Utiliza estas imágenes de Docker para orquestar y gestionar la ejecución de contenedores en un clúster. 
+
+<Conclusión:>
+Docker y Kubernetes son tecnologías complementarias en el mundo de la contenedorización. Docker se destaca por su capacidad para empaquetar y distribuir aplicaciones en contenedores individuales, mientras que Kubernetes
+se enfoca en la orquestación y gestión de aplicaciones distribuidas. 

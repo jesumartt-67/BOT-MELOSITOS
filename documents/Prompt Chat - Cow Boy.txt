@@ -1,0 +1,57 @@
+Actúa como un experto desarrollador web senior con sólidos conocimientos en IA (Machine Learning y Procesamiento de Lenguaje Natural), Apache Kafka, base de datos vectorial ChromaDB, generación aumentada de recuperación (RAG), contenedores (Docker, Kubernetes), microservicios, infraestructura CI/CD y control de versiones.
+
+**Contexto del entorno de desarrollo:**
+- PC: Intel Core i5 9400 CPU 2.90 GHz, 64 bits, 16 GB RAM
+- SO: Windows 11 Pro versión 25 Hz
+- VM: Linux Ubuntu en Vagrant
+- Docker Desktop: Corriendo sobre WSL2 (limitado a 4GB RAM) con imagen MySQL configurada
+- AntyGravity: Centro de mando conectado a VM Linux y Docker mediante SSH
+
+**Objetivo del proyecto:**
+Desarrollar una aplicación web con arquitectura de microservicios que lea información desde PDFs (costos educativos, jornadas extensivas, uniformes, fechas importantes, actividades extracurriculares, etc.), la almacene en una base de datos vectorial y la sirva a través de un chatbot que responda consultas de clientes.
+
+**Requerimientos técnicos:**
+
+1. **Front-End:** Interfaz básica que permita la interacción del usuario final con el chatbot.
+
+2. **Back-End:** Sistema de almacenamiento de información de PDFs en base de datos vectorial.
+
+3. **API REST-ful:** Comunicación entre Front-End (ChatBot) y Back-End (BD vectorial).
+
+4. **Estructura de carpetas para cada microservicio:**
+   ```
+   /MicroServicio/
+   ├── /embedding-service
+   ├── /ingestion-service
+   ├── /query-service
+   ├── /vector-store-service
+   └── docker-compose.yml
+   ```
+
+5. **Microservicios a implementar:**
+   - 5.1 Servicio de mensajería: Comunicación con el usuario (web o WhatsApp)
+   - 5.2 Servicio de inferencia: Modelo de Machine Learning para procesar mensajes
+   - 5.3 Servicio de usuario/historial: Almacena conversaciones y contexto en BD
+   - 5.4 Servicio de API Gateway: Seguridad y balanceo de carga
+
+6. **Despliegue:** Google Cloud
+
+**Tu tarea:**
+Proporciona una guía paso a paso y completa para implementar esta solución. Incluye:
+- Arquitectura general del sistema con diagrama conceptual
+- Especificación técnica de cada microservicio (lenguaje recomendado, librerías, dependencias)
+- Configuración de Docker y docker-compose para cada servicio
+- Estructura de directorios y archivos necesarios
+- Código base para cada microservicio (puntos de entrada principales)
+- Configuración de ChromaDB para almacenamiento vectorial
+- Integración de RAG en el servicio de inferencia
+- Configuración de CI/CD para el despliegue en Google Cloud
+- Recomendaciones para optimizar el uso de recursos dado el límite de 4GB en WSL2
+- Pasos de prueba local antes del despliegue en producción
+
+Sé práctico y directo. Prioriza la funcionalidad sobre la perfección inicial, pero mantén buenas prácticas de arquitectura.
+
+Iniciemos desarrollando estos puntos:
+1. Crear la estructura de datos del proyecto.
+2. Hacemos las configuraciones necesarias para optimizar recursos que permitan la ejecucion de la aplicacion sin ningun problema.
+3. Desarrollamos e implementamos el front-end de la aplicacion y lo evaluamos.

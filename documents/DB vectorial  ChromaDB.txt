@@ -1,0 +1,27 @@
+¿Qué es ChromaDB Y Para Qué se usa?
+*************************************************************
+
+¿Qué es ChromaDB?
+ChromaDB es una base de datos vectorial de código abierto que permite almacenar y recuperar incrustaciones vectoriales, que son representaciones numéricas de datos como texto o imágenes. Estas incrustaciones son utilizadas en aplicaciones
+de procesamiento del lenguaje natural (NLP) y aprendizaje automático, facilitando tareas como la búsqueda semántica y los sistemas de recomendación. 
+
+<Funcionamiento de ChromaDB>
+
+1. Creación de Colecciones: En ChromaDB, los datos se organizan en colecciones, que son similares a las tablas en bases de datos relacionales. Cada colección puede tener diferentes configuraciones de incrustaciones y metadatos. 
+2. Incrustaciones: Cuando se añade un documento de texto a una colección, ChromaDB convierte automáticamente el texto en una incrustación utilizando un modelo predefinido (por defecto, all-MiniLM-L6-v2). 
+3. Búsqueda por Similitud: Los usuarios pueden realizar consultas a la base de datos proporcionando un texto o una incrustación. ChromaDB realiza una búsqueda de similitud para devolver los documentos más relevantes, utilizando
+   métricas como la similitud del coseno o la distancia euclidiana. 
+4. Filtrado de Resultados: Además de la búsqueda por similitud, ChromaDB permite filtrar los resultados basándose en metadatos, lo que ayuda a refinar las consultas y obtener resultados más específicos. 
+
+<Almacenamiento y Escalabilidad>
+
+ChromaDB ofrece opciones de almacenamiento como DuckDB para un uso autónomo y ClickHouse para una mayor escalabilidad. DuckDB es ideal para pruebas y bases de datos más pequeñas, mientras que ClickHouse es más adecuado para
+aplicaciones que requieren escalabilidad. 
+
+<Integración y Uso>
+
+ChromaDB se integra fácilmente con modelos de incrustación de plataformas como Hugging Face y OpenAI, lo que permite generar y almacenar incrustaciones de manera eficiente. Además, proporciona una API sencilla basada en Python,
+lo que facilita su uso tanto para principiantes como para expertos. 
+
+En resumen, ChromaDB es una herramienta poderosa para gestionar incrustaciones vectoriales, optimizando la búsqueda y recuperación de datos en aplicaciones de inteligencia artificial y aprendizaje automático. Su diseño centrado
+en la simplicidad y la eficiencia lo convierte en una opción atractiva para desarrolladores y empresas que trabajan con grandes volúmenes de datos.

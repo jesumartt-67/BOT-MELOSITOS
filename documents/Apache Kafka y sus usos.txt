@@ -1,0 +1,26 @@
+Apache Kafka y sus usos
+*****************************************************************
+
+Apache Kafka es una PLATAFORMA DISTRIBUIDA diseñada para ingestar, almacenar y procesar datos de streaming en TIEMPO REAL. Estos datos son generados continuamente por múltiples fuentes (sensores, aplicaciones, logs, etc.)
+y Kafka permite manejarlos de forma secuencial, escalable y tolerante a fallos.
+
+Su arquitectura combina los modelos de COLA y PUBLICACION-SUSCRIPCION mediante un registro particionado, lo que permite distribuir el procesamiento entre múltiples consumidores manteniendo el orden de los datos y soportando
+varios suscriptores simultáneos.
+
+<Principales funciones:>
+
+1. Publicar y suscribirse a flujos de registros.
+2. Almacenar los registros en el orden en que se generan.
+3. Procesar flujos en tiempo real.
+
+<Usos comunes:>
+
+1. Canalizaciones de datos en tiempo real: mover datos de forma fiable entre sistemas.
+2. Aplicaciones de streaming: consumir y procesar datos en vivo, como monitoreo de actividad de usuarios o análisis de logs.
+3. Agente de mensajería: intermediar la comunicación entre aplicaciones.
+
+<Ventajas clave:>
+
+1. Escalabilidad: particiones distribuidas en múltiples servidores.
+2. Baja latencia: procesamiento rápido y desacoplado.
+3. Durabilidad: datos replicados y almacenados en disco para tolerancia a fallos.

@@ -1,0 +1,35 @@
+¿Qué es una API REST?
+
+Una API REST (Interfaz de Programación de Aplicaciones basada en REST) es un tipo de API que sigue los principios del estilo arquitectónico REST (Transferencia de Estado Representacional). Este enfoque permite la comunicación
+entre SISTEMAS DISTRIBUIDOS, como APLICACIONES WEB, de manera eficiente, escalable y flexible.
+
+REST NO ES UN PROTOCOLO, sino un CONJUNTO DE REGLAS que definen cómo debe diseñarse una API para garantizar interoperabilidad y simplicidad. Las API RESTful son ampliamente utilizadas para conectar aplicaciones, servicios web
+y BDs, facilitando el intercambio de datos en arquitecturas modernas como los MICROSERVICIOS.
+
+<Principios clave de REST>
+
+1. Interfaz uniforme: Todas las solicitudes para un recurso deben ser consistentes y utilizar un identificador único (URI). Esto asegura que los datos sean accesibles de manera estándar.
+2. Desacoplamiento cliente-servidor: El cliente y el servidor son independientes. El cliente solo necesita conocer el URI del recurso, mientras que el servidor no almacena información sobre el estado del cliente.
+3. Sin estado: Cada solicitud debe contener toda la información necesaria para procesarla, sin depender de solicitudes previas.
+4. Almacenamiento en caché: Las respuestas pueden ser almacenadas en caché para mejorar el rendimiento y reducir la carga en el servidor.
+5. Sistema en capas: Las solicitudes y respuestas pueden pasar por múltiples capas intermedias (como servidores proxy) sin que el cliente o el servidor final lo perciban.
+6. Código bajo demanda (opcional): En algunos casos, el servidor puede enviar código ejecutable al cliente para extender su funcionalidad.
+
+<Funcionamiento de una API REST>
+
+Las API RESTful utilizan el protocolo HTTP para realizar operaciones estándar como crear, leer, actualizar y eliminar (CRUD). Los métodos HTTP más comunes son:
+
+1. GET: Recuperar un recurso.
+2. POST: Crear un nuevo recurso.
+3. PUT: Actualizar un recurso existente.
+4. DELETE: Eliminar un recurso.
+
+Las respuestas suelen estar en formatos como JSON o XML, siendo JSON el más popular por su legibilidad y compatibilidad con múltiples lenguajes.
+
+<Ventajas de las API REST>
+
+1. Escalabilidad: Gracias a su diseño SIN ESTADO y soporte para almacenamiento en caché, las API REST pueden manejar grandes volúmenes de tráfico.
+2. Flexibilidad: Permiten el uso de diferentes lenguajes de programación y tecnologías en el cliente y el servidor.
+3. Eficiencia: Son ligeras y rápidas, ideales para aplicaciones móviles y el Internet de las Cosas (IoT).
+
+En resumen, las API REST son una solución poderosa y versátil para integrar sistemas y facilitar la comunicación entre aplicaciones en entornos modernos.

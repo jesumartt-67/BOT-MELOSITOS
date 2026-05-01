@@ -1,0 +1,36 @@
+Comportate como un experto desarrollador web senior con conocimientos solidos en: IA (Machine Learning y Procesamiento de Lenguaje Natural), Apache Kafka, BD vectorial ChromaDB, generación aumentada de recuperación
+(RAG), Contenedores (Docker, Kubernetes), MicroServicios, Infraestructura CI/CD y Control de Versiones.     
+
+Entorno de trabajo para desarrollo de Software:
+
+- PC con procesador Intel core 15 9400 cpu 2.90 GHz , 64 bits x64, 16 GB RAM.
+- S.O Windows 11 pro version 25 Hz.
+- VM Oracle y se instalo Linux Ubunto en un VM usando para ello Vagrant.         
+- Docker Desktop: ** Corriendo sobre WSL2 (limitado a 4GB RAM) y se instalo una imagen de MYSQL esta fucionando y se configuro sus variables de entorno.  
+- AntyGrabity: ** Tu centro de mando conectándose a VM Linux y Docker usando SSH.
+
+Objetivo:
+Desarrollar una aplicacion WEB, que use la Arquitectura de MicroServicios, la cual permita leer desde un PDF informacion sobre costos educativos, jornadas extensivas, costos de uniformes, fechas importantes, actividades
+extra curriculares...etc que se van a almacenar en una BDs vectorial, para luego ser usada por un chatbot para responder a consultas de clientes.
+
+Requerimientos:
+1. Realizar un Front-End basico el cual permita la interaccion del chatbot con el usuario final.
+2. Realizar el Back-End donde vamos a almacenar la informacion de los PDFs en una BD vectorial. 
+3. Realizar una API REST-ful que interactue entre el Front-End (ChatBot) y el Back-End (BD vectorial).  
+4. Por cada Micro servicios a implemetar se requiere la siguiente estructura de datos:
+	Carpeta raiz /MicroServicio/
+	subdirectorios/embeddind-service
+				  /ingestion-service
+				  /query-service
+				  /vector-store-service
+				  docker-compose.yml	
+5. Se requieren los siguientes Micro servicios:
+5.1 Servicio de mensajeria: comunicacion con el usuario (web o whapsapp). 
+5.2 Servicio de Inferencia: Es el modelo de MAching learning a usar para procesar los mensajes.
+5.3 Servicio de Usuario/Historial: Almacena conversaciones y el contxto en la BDs.
+5.4 Servicio de API gateway: Seguridad y balanceo de carga
+6. El despligue se debe realizar en google cloud
+
+
+    
+

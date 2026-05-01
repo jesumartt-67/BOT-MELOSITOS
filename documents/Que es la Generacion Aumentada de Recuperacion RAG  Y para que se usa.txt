@@ -1,0 +1,39 @@
+
+La inteligencia artificial (IA) generativa destaca por su capacidad para producir respuestas de texto basadas en grandes modelos de lenguaje (LLM), en los que la IA se entrena con un gran número de puntos de datos.
+La <buena noticia> es que el texto generado suele ser FACIL DE LEER y proporciona respuestas detalladas y globalmente pertinentes a las preguntas planteadas a través del software, generalmente llamadas consultas.
+La <mala noticia> es que la información utilizada para generar la respuesta se limita a aquella usada para entrenar la IA, por lo común un LLM general. Los datos del LLM pueden llevar semanas, meses o años obsoletos,
+y tal vez no incluyan información específica sobre los productos o servicios de la organización en el caso de un BOT conversacional corporativo de IA. Esto puede generar respuestas incorrectas que menoscaban la confianza
+en la tecnología de clientes y empleados.
+
+¿Qué es la generación aumentada de recuperación (RAG)?
+
+Ahí es donde entra en escena la generación aumentada de recuperación (RAG). La RAG permite optimizar los resultados de un LLM mediante información específica sin necesidad de modificar el modelo subyacente. Esa información
+particular puede ESTAR MAS AL DIA que el propio LLM, así como enfocarse en una industria en particular. Esto permite al sistema de IA generativa proporcionar respuestas contextualmente adecuadas a las CONSULTAS, así como 
+basar dichas respuestas en datos extremadamente recientes.
+
+<En qué consiste la generación aumentada de recuperación (RAG)>
+
+Tomemos el ejemplo de una liga deportiva que desea que los aficionados y medios de comunicación puedan usar el CHATBOT para consultar datos y obtener respuesta a sus preguntas sobre los jugadores, los equipos, la historia
+y las reglas del deporte, así como las estadísticas y clasificaciones actuales. Un LLM general podría RESPONDER a preguntas sobre la HISTORIA y las reglas o tal vez describir el estadio de un equipo en particular. Sin embargo,
+NO PODRIA comentar el partido de ayer por la noche ni proporcionar INFORMACION ACTUALIZADA sobre la lesión de un deportista en particular porque no dispondría de esa información y, dado que se necesita una potencia de computación
+significativa para volver a entrenar un LLM, NO ES FACTIBLE mantener el modelo al día.
+
+Además del LLM, grande y estático, la liga deportiva posee o puede acceder a muchas otras fuentes de información, como bases de datos, almacenes de datos, documentos con biografías de los jugadores y fuentes de noticias que
+analizan cada partido en profundidad. La RAG permite a la IA generativa USAR ESTA INFORMACION. Ahora, el CHATBOT puede proporcionar información más oportuna, más adecuada al contexto y más precisa.
+
+En pocas palabras, la RAG ayuda a los LLM a proporcionar respuestas más idóneas.
+
+<Conclusiones clave>
+
+1. La RAG es una técnica de IA relativamente nueva que mejora la calidad de la <IA generativa> al permitir a grandes modelos de lenguaje (LLM) aprovechar recursos de datos adicionales sin necesidad de volver a entrenarlos.
+2. Los modelos RAG crean repositorios de conocimientos basados en los datos de la propia organización. Estos repositorios se pueden actualizar continuamente para ayudar a la <IA generativa> a brindar respuestas adaptadas al
+   contexto y oportunas.
+3. Los CHATBOTS y otros sistemas conversacionales que utilizan el procesamiento del lenguaje natural pueden beneficiarse enormemente de la RAG y la IA generativa.
+4. La implementación de RAG requiere tecnologías como BDs vectoriales, que permiten la codificación rápida de nuevos datos y la búsqueda en esos datos para alimentar el LLM.
+
+¿Cómo funciona la generación aumentada de recuperación?
+
+Piensa en toda la información de la que dispone una organización: BD estructuradas, PDF y otros documentos no estructurados, blogs, fuentes de noticias y transcripciones de chat de sesiones de servicio al cliente pasadas.
+En la RAG, esta gran cantidad de datos dinámicos se traduce a un formato común y se almacena en una biblioteca de conocimientos accesible por el sistema de IA generativa. Los datos de esa biblioteca de conocimientos se
+procesan en representaciones numéricas utilizando un tipo especial de algoritmo llamado modelo de lenguaje embebido y se almacenan en una BDs vectorial, en la que se puede buscar rápidamente para recuperar la información
+contextual correcta.

@@ -1,0 +1,13 @@
+¿Qué es la integración continua (CI) y la entrega continua (CD)?
+****************************************************************
+
+La integración continua/entrega continua (CI/CD) es un conjunto de prácticas que automatizan y agilizan los ciclos de desarrollo, pruebas y entrega de software.
+
+La CI/CD proporciona a las organizaciones un marco de desarrollo moderno que permite integraciones de código, versiones de software y actualizaciones más rápidas y fiables. La CI/CD se basa en un proceso de automatización
+(denominado pipeline de CI/CD) que consta de tres procesos clave:
+
+1. Integración continua (CI): La CI es una práctica de desarrollo de software en la que los desarrolladores integran periódicamente código nuevo en un repositorio central de código fuente a lo largo de todo el ciclo de desarrollo.
+2. Entrega continua (CD): Las prácticas de CD automatizan el empaquetado y la entrega de los cambios de código una vez estos han superado las pruebas de integración. Garantiza que el código esté siempre listo para su
+   implementación, de modo que los desarrolladores puedan lanzar paquetes de código bajo demanda.
+3. Implementación continua: Los pipelines de CI/CD maduros también se basan en la implementación continua, una estrategia de desarrollo que permite a los desarrolladores publicar automáticamente los cambios de código en el
+   entorno de producción.

@@ -1,0 +1,13 @@
+services:
+  vector-store:
+    image: chromadb/chroma
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+  inference-service:
+    build: ./microservices/inference-service
+    deploy:
+      resources:
+        limits:
+          memory: 1G

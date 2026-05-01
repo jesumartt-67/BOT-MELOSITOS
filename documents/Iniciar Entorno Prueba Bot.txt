@@ -1,0 +1,67 @@
+PASO 1: Levantar la Máquina Virtual (Backend)
+Abre una terminal de PowerShell y enciende el motor:
+
+Entra a la carpeta de Vagrant:
+cd E:\VagrantVM\Ubuntu-Focal
+
+Inicia la VM:
+vagrant up
+
+Entra a Linux:
+vagrant ssh
+
+PASO 2: Ejecutar el API de Ingesta (Backend Python)
+Dentro de la terminal de Linux (la que abriste con vagrant ssh):
+
+Entra a la carpeta del servicio:
+cd ~/dev/backend/ingestion_service
+
+Activa el entorno virtual:
+source venv/bin/activate
+
+Lanza el servidor:
+python main.py
+
+Dato clave: Debes ver el mensaje Uvicorn running on [http://0.0.0.0:8000](http://0.0.0.0:8000). No cierres esta ventana.
+
+PASO 3: Ejecutar el Chatbot (Frontend React)
+Abre una nueva pestaña de PowerShell (no cierres la anterior):
+
+Entra a la carpeta del proyecto en Windows:
+cd E:\VagrantVM\Ubuntu-Focal\PF_NLP_Jardin_Infantil\frontend
+
+Verificar que estás en el lugar correcto
+Escribe ls y presiona Enter. Deberías ver archivos como package.json, vite.config.js y la carpeta src. Si los ves, ¡estás en el sitio correcto!
+
+Lanza el frontend: vagrant ssh
+
+Instalar las dependencias (solo una vez)
+
+Si va a ejecutar por primera vez entonces: 
+	cp -r /vagrant/PF_NLP_Jardin_Infantil/frontend ~/frontend_linux
+	cd ~/frontend_linux
+	Este comando descargará la carpeta node_modules (incluyendo Vite) dentro de tu proyecto: npm install
+de lo contrario
+	cd ~/frontend_linux
+
+Lanza el frontend: npm run dev -- --host
+
+Copia la URL: Normalmente es http://localhost:5173.
+
+PASO 4: Verificación Final (La Sustentación)
+Abre tu navegador (Chrome o Edge) y carga estas dos pestañas:
+
+Pestaña A (Prueba de Vida): http://localhost:8000
+
+Debe decir: {"status":"Servicio de Ingesta Activo"}.
+
+Pestaña B (El Chat): http://localhost:5173
+
+Aquí es donde harás la demostración.
+
+💡 Tips para que no se vuelva a bloquear:
+Cierra programas pesados: Antes de la sustentación, cierra juegos, navegadores con muchas pestañas o programas de edición para dejarle toda la RAM a la VM.
+
+El orden importa: Primero siempre vagrant up y el backend; al final el frontend.
+
+¿Quieres que probemos lanzando primero el Backend para asegurar que la base de datos Chroma esté lista? Solo confírmame si ya lograste hacer el vagrant up tras el reinicio.
