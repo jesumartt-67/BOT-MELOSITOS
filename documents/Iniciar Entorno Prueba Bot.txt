@@ -35,14 +35,13 @@ Escribe ls y presiona Enter. Deberías ver archivos como package.json, vite.conf
 
 Lanza el frontend: vagrant ssh
 
+cd ~/frontend_linux
+
 Instalar las dependencias (solo una vez)
 
 Si va a ejecutar por primera vez entonces: 
 	cp -r /vagrant/PF_NLP_Jardin_Infantil/frontend ~/frontend_linux
-	cd ~/frontend_linux
 	Este comando descargará la carpeta node_modules (incluyendo Vite) dentro de tu proyecto: npm install
-de lo contrario
-	cd ~/frontend_linux
 
 Lanza el frontend: npm run dev -- --host
 
@@ -65,3 +64,9 @@ Cierra programas pesados: Antes de la sustentación, cierra juegos, navegadores 
 El orden importa: Primero siempre vagrant up y el backend; al final el frontend.
 
 ¿Quieres que probemos lanzando primero el Backend para asegurar que la base de datos Chroma esté lista? Solo confírmame si ya lograste hacer el vagrant up tras el reinicio.
+
+
+Pregunta 1: "¿Cuál es el costo de la matrícula para Párvulos?"Debería responder: $ 580.000.  
+Pregunta 2: "¿Cuánto cuesta el servicio RIE hasta la 1:00 PM?"Debería responder: $ 431.000.  
+Pregunta 3: "¿Quién es la directora del jardín?"Debería responder: Lic. Omaira Martínez I..  
+
